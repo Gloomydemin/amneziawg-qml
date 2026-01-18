@@ -19,8 +19,8 @@ Features:
 * Extra routes can be added per-profle
 
 ## Screenshots
-![](https://github.com/davidventura/wireguard_qml/blob/master/screenshots/main.png?raw=true)
-![](https://github.com/davidventura/wireguard_qml/blob/master/screenshots/create_profile.png?raw=true)
+<!-- ![](https://github.com/davidventura/wireguard_qml/blob/master/screenshots/main.png?raw=true)
+![](https://github.com/davidventura/wireguard_qml/blob/master/screenshots/create_profile.png?raw=true) -->
 
 ## Get kernel support for wireguard on your device
 
