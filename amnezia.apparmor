@@ -1,0 +1,15 @@
+{
+  "policy_groups": [
+    "networking",
+    "net_admin",
+    "user_dirs"
+  ],
+  "read_path": [
+    "@{HOME}/.local/share/amneziawg.sysadmin/**"
+  ],
+  "write_path": [
+    "@{HOME}/.local/share/amneziawg.sysadmin/**"
+  ]
+  "policy_version": 2404.1,
+  "template": "ubuntu-sdk"
+}

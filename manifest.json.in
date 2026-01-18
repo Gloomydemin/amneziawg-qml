@@ -1,0 +1,15 @@
+{
+    "name": "amneziawg.sysadmin",
+    "description": "AmneziaWG VPN",
+    "architecture": "@CLICK_ARCH@",
+    "title": "AmneziaWG",
+    "hooks": {
+        "amnezia": {
+            "apparmor": "amnezia.apparmor",
+            "desktop":  "amnezia.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "sysadmin <bytebuddy@yandex.ru>",
+    "framework": "ubuntu-touch-24.04-1.x"
+}
