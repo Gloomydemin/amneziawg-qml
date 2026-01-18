@@ -16,6 +16,8 @@ AmneziaWG VPN клиент для Ubuntu Touch. Форк WireGuard_qml с под
 ```bash
 clickable build --arch arm64
 clickable install
+```
+
 ## License
 
 Copyright (C) 2026  sysadmin
