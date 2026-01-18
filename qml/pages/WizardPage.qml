@@ -58,17 +58,17 @@ UITK.Page {
 See <a href='https://gitlab.com/ubports/community-ports/android9/xiaomi-poco-f1/kernel-xiaomi-beryllium/-/merge_requests/1'>here</a> \
 for an example change to the kernel.")
         }
-        UITK.Button {
-            anchors.left: parent.left
-            anchors.right: parent.right
-            text: i18n.tr("OK")
-            onClicked: {
-                root.activeTab = "home"
-                settings.finishedWizard = true
-                stack.clear()
-                stack.push(Qt.resolvedUrl("PickProfilePage.qml"))
-            }
-        }
+        // UITK.Button {
+        //     anchors.left: parent.left
+        //     anchors.right: parent.right
+        //     text: i18n.tr("OK")
+        //     onClicked: {
+        //         root.activeTab = "home"
+        //         settings.finishedWizard = true
+        //         stack.clear()
+        //         stack.push(Qt.resolvedUrl("PickProfilePage.qml"))
+        //     }
+        // }
     }
 
     Settings {

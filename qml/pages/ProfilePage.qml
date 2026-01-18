@@ -40,6 +40,7 @@ UITK.Page {
         title: isEditing
                ? i18n.tr("Edit AmneziaWG profile %1").arg(profileName)
                : i18n.tr("Create AmneziaWG profile")
+        leadingActionBar.actions: []
     }
 
     Flickable {

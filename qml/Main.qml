@@ -18,6 +18,7 @@ UITK.MainView {
     
     readonly property var amneziaStyle: Qt.createComponent("Style/AmneziaStyle.qml").createObject()
     
+
     objectName: 'mainView'
     applicationName: 'amneziawg.sysadmin'
     automaticOrientation: true
@@ -37,17 +38,29 @@ UITK.MainView {
     Toast {
         id: toast
     }
-    // UITK.PageStack {
-    //     anchors.fill: parent
-    //     id: stack
+    
+
+    // Rectangle {
+    //     id: pageBackground
+    //     anchors {
+    //         top: parent.top
+    //         left: parent.left
+    //         right: parent.right
+    //         bottom: globalFooter.top
+    //     }
+    //     color: root.amneziaStyle.midnightBlack
+    //     z: 0
     // }
+
+
     UITK.PageStack {
         anchors {
             top: parent.top
             left: parent.left
             right: parent.right
-            bottom: globalFooter.top  // ← PageStack до футера
+            bottom: globalFooter.top  
         }
+        
         id: stack
         z: 1
     }
@@ -63,7 +76,7 @@ UITK.MainView {
         height: units.gu(5)
         z: 10
 
-        color: "#1e1e1e"
+        color: root.amneziaStyle.onyxBlack
         opacity: 0.96
 
         RowLayout {
@@ -79,8 +92,9 @@ UITK.MainView {
                 amneziaStyle: root.amneziaStyle
                 onClicked: {
                     root.activeTab = "home"
-                    while (stack.depth > 1)
-                        stack.pop()
+                    // while (stack.depth > 1)
+                    //     stack.pop()
+                    stack.push(Qt.resolvedUrl("pages/PickProfilePage.qml"))
                 }
             }
 
@@ -157,7 +171,7 @@ UITK.MainView {
     Component.onCompleted: {
         // check if user has set a sudo pwd and show password prompt if so:
         
-        stack.push(Qt.resolvedUrl("pages/PickProfilePage.qml"));
+        stack.push(Qt.resolvedUrl("pages/PageStart.qml"));
         
 
         // python.call('test.test_sudo',

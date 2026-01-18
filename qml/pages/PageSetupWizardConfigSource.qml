@@ -13,8 +13,9 @@ UITK.Page {
     objectName: "configSource"
 
     header: UITK.PageHeader {
-        title: i18n.tr("Connection")
+        title: i18n.tr("Connection")        
         z:10
+        leadingActionBar.actions: []
     }
 
     property bool clipboardAvailable: false

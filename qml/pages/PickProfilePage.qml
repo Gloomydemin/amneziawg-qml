@@ -18,6 +18,7 @@ UITK.Page {
     header: UITK.PageHeader {
         id: header
         title: i18n.tr("AmneziaVPN")
+        leadingActionBar.actions: []
         // trailingActionBar.actions: [
         //     UITK.Action {
         //         iconName: "add"
