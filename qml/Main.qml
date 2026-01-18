@@ -9,15 +9,17 @@ import Ubuntu.Content 1.3
 
 import "./pages"
 import "./components"
-// import "./style"
+import "./Modules/Enum" as Enums
+import "./Modules/Style" as StyleModule 
 
 UITK.MainView {
     property string pwd
 
     id: root
     
-    readonly property var amneziaStyle: Qt.createComponent("Style/AmneziaStyle.qml").createObject()
-    
+    // readonly property var amneziaStyle: Qt.createComponent("Style/AmneziaStyle.qml").createObject()
+    readonly property var amneziaStyle: StyleModule.AmneziaStyle {}
+    readonly property var enumsPage: Enums.Enums {}
 
     objectName: 'mainView'
     applicationName: 'amneziawg.sysadmin'
@@ -76,7 +78,7 @@ UITK.MainView {
         height: units.gu(5)
         z: 10
 
-        color: root.amneziaStyle.onyxBlack
+        color: amneziaStyle.onyxBlack
         opacity: 0.96
 
         RowLayout {

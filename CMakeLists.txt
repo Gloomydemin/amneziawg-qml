@@ -1,8 +1,10 @@
-cmake_minimum_required(VERSION 3.5)
-project(amnezia C CXX)
+cmake_minimum_required(VERSION 3.16)
+# project(amnezia C CXX)
+project(amneziawg)
 
 # Automatically create moc files
 set(CMAKE_AUTOMOC ON)
+
 
 execute_process(
     COMMAND dpkg-architecture -qDEB_HOST_MULTIARCH
@@ -97,3 +99,5 @@ file(GLOB_RECURSE PROJECT_SRC_FILES
 )
 
 add_custom_target(${PROJECT_NAME}_FILES ALL SOURCES ${PROJECT_SRC_FILES})
+
+
