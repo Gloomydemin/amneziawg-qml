@@ -1,6 +1,6 @@
 # Wireguard
 
-Это фокр от https://github.com/DavidVentura/Wireguard_qml
+Это форк от https://github.com/DavidVentura/Wireguard_qml
 
 Wireguard VPN. 
 
